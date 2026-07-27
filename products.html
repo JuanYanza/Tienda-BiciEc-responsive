@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online Bicicletas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="BiciEc Logo">
+                <h1> STORE BICIEc</h1>
+            </div>
+                    <div class="menu-toggle">&#9776;</div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="products.html" class="active">Productos</a></li>
+                    <li><a href="about.html">Nosotros</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="cart.html">Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Nuestros Productos</h1>
+                <p>Tienda de Bicicletas y Accesorios Originales.</p>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="container">
+                <div class="filter-bar">
+                    <select id="categoryFilter">
+                        <option value="all">Todas las categorías</option>
+                        <option value="laptops">Bicicletas</option>
+                        <option value="mice">Repuestos</option>
+                        <option value="keyboards">Patinetas</option>
+                        <option value="accessories">Accesorios</option>
+                    </select>
+                </div>
+
+                <div class="products-grid">
+                    <div class="product-card" data-category="laptops">
+                        <img src="img/products/bicicletabmx.jpg" alt="Bicicleta de color para bmx">
+                        <h3>BMX</h3>
+                        <p class="description">Bicicleta Bmx diseñada para maniobras y trucos al igual que una patineta.</p>
+                        <p class="price">$300.00</p>
+                        <button class="btn add-to-cart">Agregar al Carrito</button>
+                    </div>
+
+                    <div class="product-card" data-category="mice">
+                        <img src="img/products/bicicletamontaña.avif" alt="Bicicleta para la montaña">
+                        <h3>Montañera</h3>
+                        <p class="description">Bicicleta ideal para salir de ruta con amigos a increibles aventuras por los bosques.</p>
+                        <p class="price">$999.99</p>
+                        <button class="btn add-to-cart">Agregar al Carrito</button>
+                    </div>
+
+                    <div class="product-card" data-category="keyboards">
+                        <img src="img/products/patinetas.jpg" alt="Patnetas para trucos urbanos">
+                        <h3>Patinetas</h3>
+                        <p class="description">Patinetas para skateboard de todo tamaño y estilo en varios colores urbanos.</p>
+                        <p class="price">$30.00</p>
+                        <button class="btn add-to-cart">Agregar al Carrito</button>
+                    </div>
+
+                    <div class="product-card" data-category="laptops">
+                        <img src="img/products/frenos.jpg" alt="frenos para llantas de bicicleta">
+                        <h3>Frenos de Disco</h3>
+                        <p class="description">Frenos para bicicletas en froma de disco material de aluminio resistente.</p>
+                        <p class="price">$29.99</p>
+                        <button class="btn add-to-cart">Agregar al Carrito</button>
+                    </div>
+
+                    <div class="product-card" data-category="mice">
+                        <img src="img/products/llantas.jpg" alt="Llantas de caucho para bicicleta">
+                        <h3>Llantas</h3>
+                        <p class="description">Para bicicletas de todo tipo y tamaño.</p>
+                        <p class="price">$11.99</p>
+                        <button class="btn add-to-cart">Agregar al Carrito</button>
+                    </div>
+
+                    <div class="product-card" data-category="keyboards">
+                        <img src="img/products/ruedaspatineta.png" alt="Ruedas para patinetas">
+                        <h3>Ruedas de patineta</h3>
+                        <p class="description">Ruedas de colores para patinetas</p>
+                        <p class="price">$9.99</p>
+                        <button class="btn add-to-cart">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Online BiciEc</h3>
+                    <p>Tu tienda  de confianza</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="pages/terms.html">Términos y Condiciones</a></li>
+                        <li><a href="pages/privacy.html">Privacidad</a></li>
+                        <li><a href="pages/help.html">Ayuda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: info@biciec.com</p>
+                    <p>Tel: +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Tienda de Bicicletas y Accesorios Originales. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+
+    <script>
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector("header nav");
+
+menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+</script>
+</body>
+</html>
+
